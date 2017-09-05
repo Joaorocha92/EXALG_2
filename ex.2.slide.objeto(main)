@@ -1,0 +1,10 @@
+public class main {
+    public static void main(String[] args) {
+        contador c1 = new contador();
+        System.out.println("C1: " +c1.getValor());
+        c1.incrementar();
+        c1.incrementar();
+        c1.incrementar();
+    }
+    
+}
