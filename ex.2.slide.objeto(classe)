@@ -1,0 +1,19 @@
+public class contador {
+    
+    private int valor;
+    
+    public contador(){
+        valor=0;
+    }
+     public int getValor(){
+         return valor;
+         
+     }   
+     public void zerar(){
+         valor=0;
+     }
+     public void incrementar(){
+         valor++;
+     }
+
+}
