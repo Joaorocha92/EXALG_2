@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        Moeda m = new Moeda(0.05f);
+        Moeda m2 = new Moeda(0.25f);
+        Cofre cofre = new Cofre();
+        cofre.adicionar(m);
+    }
+    
+    
+}
