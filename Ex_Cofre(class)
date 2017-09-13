@@ -1,0 +1,18 @@
+public class Cofre {
+    private ArrayList<Moeda> moedas;
+    
+    public Cofre(){
+         moedas= new ArrayList<>();
+     }
+    public void adicionar(Moeda m){
+        moedas.add(m);
+    }
+    public float calcularTotal(){
+        float total = 0.0f;
+        for(Moeda m : moedas){
+            total += m.getValor();
+        }
+        return total;
+    }
+    }
+    
