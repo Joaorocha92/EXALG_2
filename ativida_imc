@@ -1,0 +1,75 @@
+package joao.br;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author João
+ */
+public class Pessoa{
+    
+    private String nome;
+    private int idade;
+    private double peso, altura;
+    
+    //construtor
+    public Pessoa(String nome, int idade, double peso, double altura){
+        this.nome = nome;
+        this.idade = idade;
+        this.peso = peso;
+        this.altura = altura;
+            }
+
+    Pessoa() {
+    }
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+    public void setPeso(double peso){
+        this.peso = peso;
+    }
+    public void setAltura(double altura){
+        this.altura = altura;
+    }
+    public String getNome(){
+        return nome;
+    }
+    public int getIdade(){
+        return idade;
+    }
+    public double getPeso(){
+        return peso;
+    }
+    public double getAltura(){
+        return altura;
+    }
+    
+    
+    public double calculo(){
+        return peso/(altura*altura);
+    }
+    
+    public void imc (){
+        if(calculo()< 18.5){
+            System.out.println("Abaixo do peso");
+        }
+        else if(calculo()>=18.5 && calculo()<=24.5){
+            System.out.println("Peso ideal");
+        }
+        else if(calculo()>=25 && calculo()<=29.9){
+            System.out.println("Sobrepeso");
+        }
+        else if(calculo()>=30 && calculo()<=34.9){
+            System.out.println("Obesidade grau 1");
+        }
+        else if(calculo()>= 35 && calculo()<=39.9){
+            System.out.println("Obesidade grau 2");
+        }
+        else if (calculo()>=40){
+            System.out.println("Obesidade grau 3");
+        }
+    }
+    
+    
+    
+}
