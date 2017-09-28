@@ -1,6 +1,5 @@
 package joao.br;
 
-import java.util.Scanner;
 
 /**
  *
@@ -10,7 +9,9 @@ public class Pessoa{
     
     private String nome;
     private int idade;
-    private double peso, altura;
+    private double peso;
+    private double altura;
+    
     
     //construtor
     public Pessoa(String nome, int idade, double peso, double altura){
@@ -31,6 +32,9 @@ public class Pessoa{
     public void setAltura(double altura){
         this.altura = altura;
     }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
     public String getNome(){
         return nome;
     }
@@ -46,7 +50,7 @@ public class Pessoa{
     
     
     public double calculo(){
-        return peso/(altura*altura);
+        return getPeso()/(getAltura()*getAltura());
     }
     
     public void imc (){
